@@ -27,10 +27,11 @@ li {
   margin: 0px;
 }
 
-.body {
+body {
   font-family: "Roboto", sans-serif;
   padding: 0;
   margin: 0;
+  color: #212121;
 }
 
 .main_educetion {
@@ -48,12 +49,9 @@ li {
   /* border: 1px solid red; */
 }
 
-.line {
-  border: 1px solid #ececec;
-}
-
 a {
   text-decoration: none;
+  color: #000000;
 }
 
 .footer {
@@ -62,7 +60,9 @@ a {
 
 /* Header */
 
-.header {
+header {
+  border-bottom: 1px solid #ececec;
+  fill: currentColor;
 }
 
 .header_navi {
@@ -74,7 +74,6 @@ a {
 .item {
   display: flex;
   text-align: center;
-
 }
 
 .header_logo {
@@ -97,15 +96,15 @@ a {
   position: relative;
 }
 .current {
-  color: #2196F3;
+  color: #2196f3;
 }
 .current::after {
   position: absolute;
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   height: 4px;
-  background: #2196F3;
+  background: #2196f3;
   border-radius: 2px;
   left: 0;
   bottom: -1px;
@@ -175,43 +174,18 @@ a {
   color: #ffffff;
 }
 
-.studio {
+.header_contac {
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
-  color: #212121;
-}
-
-/* .studio:hover {
-  color: #2196f3;
-} */
-
-.portfolio {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  color: #212121;
-}
-
-.contacs {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  color: #212121;
 }
 
 .item_svg:hover,
 .mail:hover,
-.studio:hover,
 .tel:hover,
-.portfolio:hover,
-.contacs:hover {
+.header_contac:hover {
   color: #2196f3;
 }
 
@@ -326,41 +300,6 @@ a {
   line-height: calc(30 / 16);
   color: #fff;
   display: inline-block;
-}
-
-.backdrop {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-
-  opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.backdrop.is-hidden .modal {
-  transform: translate(-50% -50%) scale(0.9);
-}
-
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 4px;
-  min-height: 500px;
-  min-width: 600px;
-  padding: 15px;
-  background-color: #fff;
-
-  transform: translate(-50% -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Description */
@@ -580,7 +519,7 @@ a {
 }
 
 .customers {
-  padding-bottom: 94px;
+  padding-bottom: 50px;
   text-align: center;
 }
 
@@ -806,17 +745,19 @@ a {
   background: #2f303a;
 }
 
-.aaa {
+.footer_nav {
   margin-right: 70px;
   width: 270px;
   padding-top: 60px;
   padding: auto;
+ 
 }
 
 .footer_web {
   justify-content: flex-start;
   /* padding-top: 60px;
   padding-bottom: 20px; */
+
 }
 
 .footer_list {
@@ -825,13 +766,13 @@ a {
   /* width: 270px; */
   /* display: inline-table; */
   justify-content: flex-start;
-  /* padding-bottom: 60px; */
+  font-style: normal;
 }
 
 .footer_href {
   margin: 0px;
   width: 270px;
-  cursor: none;
+ 
 }
 
 .ftr_adress {
@@ -847,7 +788,7 @@ a {
   font-size: 14px;
   line-height: calc(24 / 14);
   color: #ffffff;
-  cursor: none;
+
 }
 
 .footer_mail {
@@ -855,7 +796,7 @@ a {
   font-size: 14px;
   line-height: calc(24 / 14);
   color: rgba(255, 255, 255, 0.6);
-  cursor: none;
+
 }
 
 .footer_tel {
@@ -920,7 +861,65 @@ a {
   background-color: #2196f3;
   color: #ffffff;
 }
+/* Modal */
 
-/* .social-icons .social-link:hover { */
-/* background-color: #2196f3; */
-/* color: #fff; */
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 4px;
+  min-height: 581px;
+  min-width: 528px;
+  padding: 15px;
+  background-color: #fff;
+
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal_img {
+  position: absolute;
+  top: 11px;
+  right: 11px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal_close {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  fill: currentColor;
+  background-color: #fff;
+  cursor: pointer;
+  /* outline: 1px solid tomato; */
+}

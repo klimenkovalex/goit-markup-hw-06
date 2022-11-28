@@ -39,7 +39,7 @@
             </li>
             <li class="header_item">
               <a
-                class="studio current"
+                class="header_contac current"
                 href="./index.html"
                 rel="noopeper noreforrer nofollow"
                 >Студія</a
@@ -47,14 +47,14 @@
             </li>
             <li class="header_item">
               <a
-                class="portfolio"
+                class="header_contac"
                 href="./portfolio.html"
                 rel="noopeper noreforrer nofollow"
                 >Портфоліо</a
               >
             </li>
             <li class="header_item">
-              <a class="contacs" href="">Контакти</a>
+              <a class="header_contac" href="">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -402,7 +402,7 @@
     <!--Footer-->
     <footer class="footer">
       <div class="conteiner conteiner_footer">
-        <div class="aaa">
+        <div class="footer_nav">
           <a
             class="footer_web"
             href="./index.html"
@@ -475,9 +475,14 @@
         </div>
       </div>
     </footer>
+    <!-- Modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <div data-modal-close>X</div>
+        <div data-modal-close class="modal_img">
+          <svg class="modal_close" width="11" height="11">
+                <use href="./img/icons.svg#icon-Vector"></use>
+              </svg>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
