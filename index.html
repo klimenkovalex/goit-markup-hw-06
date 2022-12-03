@@ -478,24 +478,45 @@
     <!-- Modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <form class="js_speackir">
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name">
-<br>
-          <label for="tel">Телефон</label>
-          <input type="text" name="tel" id="tel">
-<br>
-          <label for="mail">Пошта</label>
-          <input type="text" name="mail" id="mail">
-<br>
-          <button type="submit">Відправити</button>
-<br>
-          <input type="checkbox" name="" id="">
+        <form class="form js_speackir">
+          <div class="headline">
+            <label for="name">Залиште свої дані, ми вам передзвонимо</label>
+          </div>
+          <div class="form_field">
+            <label for="name" class="form_name">Ім'я</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="form_field">
+            <label for="tel" class="form_name">Телефон</label>
+            <input type="text" name="tel" id="tel" />
+          </div>
+          <div class="form_field">
+            <label for="tel" class="form_name">Пошта</label>
+            <input type="text" name="mail" id="mail" />
+          </div>
+          <div class="form_field">
+            <label for="mail" class="form_name">Коментар</label>
+            <textarea
+              class="form_coment"
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="" />
+            <label class="form_contract" for=""
+              >Погоджуюся з розсилкою та приймаю Умови договору</label
+            >
+          </div>
+          <button type="submit" class="button_submit">Відправити</button>
         </form>
         <div data-modal-close class="modal_img">
           <svg class="modal_close" width="11" height="11">
-                <use href="./img/icons.svg#icon-Vector"></use>
-              </svg>
+            <use href="./img/icons.svg#icon-Vector"></use>
+          </svg>
         </div>
       </div>
     </div>

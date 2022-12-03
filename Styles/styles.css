@@ -750,21 +750,15 @@ header {
   width: 270px;
   padding-top: 60px;
   padding: auto;
- 
 }
 
 .footer_web {
   justify-content: flex-start;
-  /* padding-top: 60px;
-  padding-bottom: 20px; */
-
 }
 
 .footer_list {
   margin-right: 70px;
   padding-top: 20px;
-  /* width: 270px; */
-  /* display: inline-table; */
   justify-content: flex-start;
   font-style: normal;
 }
@@ -772,7 +766,6 @@ header {
 .footer_href {
   margin: 0px;
   width: 270px;
- 
 }
 
 .ftr_adress {
@@ -788,7 +781,6 @@ header {
   font-size: 14px;
   line-height: calc(24 / 14);
   color: #ffffff;
-
 }
 
 .footer_mail {
@@ -796,7 +788,6 @@ header {
   font-size: 14px;
   line-height: calc(24 / 14);
   color: rgba(255, 255, 255, 0.6);
-
 }
 
 .footer_tel {
@@ -922,4 +913,91 @@ header {
   background-color: #fff;
   cursor: pointer;
   /* outline: 1px solid tomato; */
+}
+
+textarea {
+  resize: none;
+}
+
+.js_speackir {
+  min-height: 581px;
+  min-width: 528px;
+  padding-bottom: 0px;
+  outline: 1px solid rgb(146, 53, 53);
+}
+
+.headline {
+  padding: 10px;
+  display: flex;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(20 / 23);
+  text-align: center;
+  text-decoration: center;
+}
+
+.form_field {
+  margin: 4px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form_field input {
+  padding: 6px 10px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form_name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(12 / 14);
+
+  color: #757575;
+}
+
+.form_coment {
+  width: 416px;
+  height: 96px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(12 / 14);
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form_contract {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(14 / 24);
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.button_submit {
+  width: 200px;
+  height: 50px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(16 / 30);
+
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+  background-color: #2196f3;
 }
