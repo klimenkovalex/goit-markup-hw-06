@@ -95,9 +95,11 @@ header {
   padding-bottom: 32px;
   position: relative;
 }
+
 .current {
   color: #2196f3;
 }
+
 .current::after {
   position: absolute;
   content: "";
@@ -902,6 +904,10 @@ header {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.modal_img:hover {
+  color: #2196f3;
+}
+
 .modal_close {
   position: absolute;
 
@@ -935,6 +941,8 @@ textarea {
 }
 
 .form_headline {
+  padding-left: 15px;
+  padding-right: 15px;
   display: flex;
   text-align: center;
   align-items: center;
@@ -942,15 +950,37 @@ textarea {
 }
 
 .form_field {
+  position: relative;
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
 
+.laibel {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+}
+
+.laibel_svg {
+  fill: #000000;
+}
+
+.form_field input:focus,
+.form_field input:hover {
+  border-color: #2196f3;
+}
+
 .form_field input {
   padding: 6px 10px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
 
+  color: rgba(117, 117, 117, 0.5);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
@@ -970,6 +1000,7 @@ textarea {
 }
 
 .form_coment {
+  padding: 12px 16px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -979,7 +1010,7 @@ textarea {
 }
 
 .form_field input::placeholder {
-  padding: 12px 16px;
+  margin-right: 12px;
   max-width: 416px;
   max-height: 96px;
   font-family: "Roboto";
@@ -987,25 +1018,45 @@ textarea {
   font-weight: 400;
   font-size: 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-
+  display: flex;
+  align-items: center;
+  text-align: center;
   color: rgba(117, 117, 117, 0.5);
 }
 
 .form_contract {
-  margin: 20px 51px 30px 54px;
+  /* position: relative; */
+  padding-left: 12px;
+  padding-top: 20px;
+  display: flex;
+  text-align: center;
+  align-items: center;
   border: 4px;
   border-color: #212121;
 }
 
 .form_text {
+  /* position: absolute; */
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  left: 0;
+  bottom: -1px;
+  text-decoration: underline #2196f3;
   color: #2196f3;
 }
 
-.form_contract label {
-  margin-left: 5px;
+.form_contract input {
+  border: 4px solid #212121;
+  background-color: #212121;
 }
 
-.form_contract {
+.form_contract label {
+  margin-left: 9px;
+}
+
+.form_contracts {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -1015,8 +1066,20 @@ textarea {
   color: #757575;
 }
 
+.current::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+  left: 0;
+  bottom: -1px;
+}
+
 .button_submit {
-  margin: 30px 168px 36px 160px;
+  margin: 30px 144px 36px 126px;
   width: 200px;
   height: 50px;
   font-family: "Roboto";
