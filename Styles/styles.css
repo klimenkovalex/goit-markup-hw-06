@@ -959,7 +959,11 @@ textarea {
 
 .form_input:focus + .form_input,
 .form_input:not(:placeholder-shown) + .form_input {
-color: #2196f3;
+  color: #2196f3;
+}
+
+.form_field:focus-within .laibel {
+  color: #f3214f;
 }
 
 .form_input:focus ~ .laibel_svg {
@@ -976,10 +980,10 @@ color: #2196f3;
   fill: #000000;
 }
 
-.laibel_svg:focus,
+/* .laibel_svg:focus,
 .laibel_svg:hover {
   fill: #2196f3;
-}
+} */
 
 .form_field input {
   padding: 6px 10px;
@@ -1016,7 +1020,7 @@ color: #2196f3;
   background-color: #2196f3;
 }
 
-.form_field:focus ~ .form_name { 
+.form_field:focus ~ .form_name {
   border-color: #2196f3;
 }
 
@@ -1047,7 +1051,7 @@ color: #2196f3;
 }
 
 .form_contract {
-  /* position: relative; */
+  position: relative;
   padding-left: 12px;
   padding-top: 20px;
   display: flex;
@@ -1058,14 +1062,17 @@ color: #2196f3;
 }
 
 .form_text {
-  /* position: absolute; */
+  position: absolute;
   content: "";
+  display: flex;
+  text-align: center;
+  align-items: center;
   width: 100%;
   height: 4px;
   border-radius: 2px;
   left: 0;
   bottom: -1px;
-  text-decoration: underline #2196f3;
+  /* text-decoration: underline #2196f3; */
   color: #2196f3;
 }
 
