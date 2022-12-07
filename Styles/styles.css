@@ -854,6 +854,44 @@ header {
   background-color: #2196f3;
   color: #ffffff;
 }
+
+.footer_text {font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: calc(16 / 14);
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #FFFFFF;}
+
+
+
+.button_tlgm {
+  width: 200px;
+  height: 50px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(16 / 30);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: #2196f3;
+  cursor: pointer;
+
+  color: #ffffff;
+}
+
+.footer_svg {
+  margin-left: 10px;
+}
+
 /* Modal */
 
 .backdrop {
@@ -959,7 +997,7 @@ textarea {
 
 .form_field .laibel:hover,
 .form_field .laibel:focus {
-  fill: #2196F3;
+  fill: #2196f3;
   color: #2196f3;
 }
 
@@ -978,10 +1016,9 @@ textarea {
 
 .form_field input:hover,
 .form_field input:focus {
-  outline: 1px solid #2196F3; border: transparent;
+  outline: 1px solid #2196f3;
+  border: transparent;
 }
-
-
 
 .laibel {
   position: absolute;
@@ -1069,7 +1106,7 @@ textarea {
   padding-top: 20px;
   /* display: flex; */
   text-align: center;
- align-items: center;
+  align-items: center;
   border: 4px;
   border-color: #212121;
 }
