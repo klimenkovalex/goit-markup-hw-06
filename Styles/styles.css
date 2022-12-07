@@ -957,7 +957,13 @@ textarea {
   margin-bottom: 10px;
 }
 
-.form_input:focus + .form_input,
+.form_field .laibel:hover,
+.form_field .laibel:focus {
+  fill: #2196F3;
+  color: #2196f3;
+}
+
+/* .form_input:focus + .form_input,
 .form_input:not(:placeholder-shown) + .form_input {
   color: #2196f3;
 }
@@ -968,7 +974,14 @@ textarea {
 
 .form_input:focus ~ .laibel_svg {
   fill: #2196f3;
+} */
+
+.form_field input:hover,
+.form_field input:focus {
+  outline: 1px solid #2196F3; border: transparent;
 }
+
+
 
 .laibel {
   position: absolute;
@@ -1059,6 +1072,10 @@ textarea {
  align-items: center;
   border: 4px;
   border-color: #212121;
+}
+
+.form_checkbox {
+  cursor: pointer;
 }
 
 .form_text {
