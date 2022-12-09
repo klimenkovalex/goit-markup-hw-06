@@ -1031,10 +1031,8 @@ textarea {
   margin-bottom: 10px;
 }
 
-.form_field .laibel:hover,
-.form_field .laibel:focus {
-  fill: #2196f3;
-  color: #2196f3;
+.form_field input:focus + .laibel  .laibel_svg {
+  fill: #2196F3;
 }
 
 /* .form_input:focus + .form_input,
