@@ -855,17 +855,49 @@ header {
   color: #ffffff;
 }
 
-.footer_text {font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: calc(16 / 14);
-letter-spacing: 0.03em;
-text-transform: uppercase;
+.footer_form {
+margin: 0px;
+  align-items: center;
+  width: 570px;
+}
 
-color: #FFFFFF;}
+.footer_text {
+  padding-top: 72px;
+  margin-bottom: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
+  color: #ffffff;
+}
 
+.footer_email {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer_scribe input {
+  padding: 15px 295px 15px 16px;
+  margin-right: 10px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background: #2f303a;
+}
 
 .button_tlgm {
   width: 200px;
@@ -890,6 +922,10 @@ color: #FFFFFF;}
 
 .footer_svg {
   margin-left: 10px;
+}
+
+.footer_scribe {
+  display: flex;
 }
 
 /* Modal */

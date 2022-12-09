@@ -474,18 +474,21 @@
           </ul>
         </div>
         <div>
-          <form>
+          <form class="footer_form">
             <h2 class="footer_text">Підпишіться на розсилку</h2>
-            <label for=""></label>
-            <input type="text" name="" id="" />
-            <button class="button_tlgm">
-              Підписатися
-              <samp>
-                <svg class="footer_svg" width="24" height="24">
-                  <use href="./img/icons.svg#icon-icon-send"></use>
-                </svg>
-              </samp>
-            </button>
+            <div class="footer_scribe">
+              <label for="user_email" class="footer_email"></label>
+              <input type="email"  name="email" id="user_email"
+              placeholder="E-mail" />
+              <button class="button_tlgm">
+                Підписатися
+                <samp>
+                  <svg class="footer_svg" width="24" height="24">
+                    <use href="./img/icons.svg#icon-icon-send"></use>
+                  </svg>
+                </samp>
+              </button>
+            </div>
           </form>
         </div>
       </div>
