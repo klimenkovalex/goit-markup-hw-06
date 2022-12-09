@@ -1007,7 +1007,7 @@ textarea {
   min-height: 448px;
   min-width: 342px;
   padding-bottom: 0px;
-  outline: 1px solid rgb(146, 53, 53);
+  /* outline: 1px solid rgb(146, 53, 53); */
 }
 
 .headline {
