@@ -1053,6 +1053,42 @@ textarea {
 .form_checkbox {
   color: var(--iris-color);
   cursor: pointer;
+
+   /* -webkit-appearance: none; */
+  /* -moz-appearance: none; */
+  /* appearance: none; */
+
+  /* position: absolute; */
+}
+
+.form_checkbox:checked + .form-icon {
+  background-color: tomato;
+  background-image: url(../img/Property\ 1=click.svg);
+  background-size: contain;
+  background-origin: padding-box;
+}
+
+/* .form_contracts {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  position: absolute;
+} */
+
+.form_contracts {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: baseline; */
+}
+
+.form-icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid red;
+  margin-right: 5px;
 }
 
 .form_text {
@@ -1067,8 +1103,8 @@ textarea {
 }
 
 .form_contract input {
-  border: 4px solid #212121;
-  background-color: #212121;
+  /* border: 4px solid #212121;
+  background-color: #212121; */
 }
 
 .form_contract label {
