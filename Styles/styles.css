@@ -31,8 +31,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.main_educetion {
-}
+
 
 .section {
   background-color: var(--white-color);
@@ -713,9 +712,7 @@ img {
   color: var(--cloud-color);
 }
 
-.footer_icons {
-  /* padding-bottom: 132px; */
-}
+
 
 .social-icons {
   display: flex;
