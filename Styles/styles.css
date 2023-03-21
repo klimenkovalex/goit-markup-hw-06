@@ -31,8 +31,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-
-
 .section {
   background-color: var(--white-color);
 }
@@ -331,8 +329,6 @@ img {
 }
 
 .disc_img {
-  /* padding: 24px 100px; */
-
   background-color: var(--cloud-color);
 }
 
@@ -695,7 +691,6 @@ img {
 
 .conteiner_footer {
   display: flex;
-  /* padding-top: 100px; */
 }
 
 .footer_nav {
@@ -711,8 +706,6 @@ img {
   line-height: calc(24 / 16);
   color: var(--cloud-color);
 }
-
-
 
 .social-icons {
   display: flex;
