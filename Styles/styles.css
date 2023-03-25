@@ -460,8 +460,8 @@ img {
   fill: currentColor;
 }
 
-.icon:focus,
-.icon:hover,
+.social-icon .icon:focus,
+.social-icon .icon:hover,
 .user_team .social-link:hover,
 .user_team .social-link:focus {
   background-color: var(--ocean-color);
@@ -493,6 +493,7 @@ img {
 }
 
 .customers-item {
+  position: relative;
   width: 168px;
   height: 88px;
 }
@@ -516,7 +517,7 @@ img {
 }
 
 .cust_link .icon {
-  transition: fii 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   background-color: var(--white-color);
@@ -529,6 +530,10 @@ img {
 .cust_link .icon:focus {
   fill: var(--iris-color);
   border-color: var(--iris-color);
+}
+
+.customers-item .meta:hover .icon {
+  fill: var(--iris-color);
 }
 
 /* Section Portfolio */
@@ -686,7 +691,7 @@ img {
 .footer {
   background: var(--naviblue-color);
   padding-top: 100px;
-  padding-bottom: 132px;
+  padding-bottom: 100px;
 }
 
 .conteiner_footer {
@@ -1044,8 +1049,6 @@ textarea {
 }
 
 .form_checkbox {
-  display: inline;
-  align-items: baseline;
   color: var(--iris-color);
   cursor: pointer;
 }
@@ -1091,9 +1094,6 @@ textarea {
 }
 
 .form_contracts {
-  display: flex;
-  align-items: center;
-
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.03em;
