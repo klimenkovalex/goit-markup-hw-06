@@ -804,6 +804,14 @@ img {
   outline-color: var(--ocean-color);
 }
 
+.footer-input {
+  color: white;
+}
+
+.footer-input:focus {
+  color: var(--naviblue-color);
+}
+
 .footer_email {
   font-family: "Roboto";
   font-style: normal;
@@ -938,12 +946,11 @@ textarea {
 }
 
 .form {
-  padding: 0;
+  padding: 67px 19px 19px 19px;
   margin: 0;
 }
 
 .form_headline {
-  margin-top: 55px;
   margin-bottom: 16px;
 
   display: flex;
@@ -965,6 +972,8 @@ textarea {
 
   display: flex;
   flex-direction: column;
+
+  min-width: 360px;
 }
 
 .form-link {
@@ -1150,10 +1159,11 @@ textarea {
 .button-form {
   display: flex;
   justify-content: center;
+
+  margin-top: 24px;
 }
 
 .button_submit {
-  margin-top: 24px;
   width: 169px;
   height: 56px;
 

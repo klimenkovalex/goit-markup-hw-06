@@ -429,14 +429,14 @@
         <form class="footer_form">
           <p class="footer_text">Subscribe</p>
           <div class="footer_scribe">
-            <!-- <label for="user_email" class="footer_email"></label> -->
-            <input
+            <input class="footer-input"
+            type="text"
               type="email"
               name="email"
               id="user_email"
               placeholder="E-mail"
             />
-            <button class="button_tlgm">
+            <button class="button_tlgm" type="submit">
               Subscribe
               <samp>
                 <svg class="footer_svg" width="24" height="24">
@@ -452,11 +452,9 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <form class="form">
-          <div class="headline">
-            <p class="form_headline">
-              Leave your contacts and we will call you back
-            </p>
-          </div>
+          <p class="form_headline">
+            Leave your contacts and we will call you back
+          </p>
           <div class="form_field form-link">
             <label for="name" class="form_name">Name</label>
             <input type="text" class="form_input" name="name" id="name" />
@@ -507,11 +505,11 @@
             <button type="submit" class="button_submit">Send</button>
           </div>
         </form>
-        <div data-modal-close class="modal_img">
+        <button type="submit" data-modal-close class="modal_img">
           <svg class="modal_close" width="8" height="8">
             <use href="./img/icons.svg#icon-Vector"></use>
           </svg>
-        </div>
+        </button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
